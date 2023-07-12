@@ -1,0 +1,150 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Climbing survey</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+    <body>
+      
+      <form id="survey-form" method="post">
+        <h1 id="title">How was your climb today?</h1>
+      <p class="title" id="description">Leave some feedback about our climbing routes</p>
+        <fieldset>
+          <p class="title">What's your details?</p>
+          <label class="details" id="name-label">Enter Your Full Name:<input id="name" type="text" placeholder="What do they call you?" required></label>
+          <label class="details" id="email-label">Enter Your Email:<input id="email" type="email" placeholder="slapping.boulders@rocks.com"required></label>
+          <label class="details" id="number-label">How old are you?<input id="number" type="number" min="13" placeholder="xx" max="80"></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown"><p class="title">How often do you climb?</p>
+             <select id="dropdown" name="swing" class="form-control" required>
+              <option disabled selected value>Choose your frequency...</option>
+            <option value="now">Climbing now</option>
+            <option value="every">Every day</option>
+            <option value="week">A few times a week</option>
+            <option value="month">A few times a month</option>
+            <option value="few-months">Every few months</option>
+            </select>
+           </label> 
+        </fieldset>
+        <fieldset>
+          <p class="title"> What kind of climbing did you do today?</p>
+          <label>
+            <input class="inline" name="radio" type="radio" value="bouldering"> Bouldering
+          </label>
+          <label> <input class="inline" name="radio" type="radio" value="sport"> Lead/sport Climbing</label>
+          <label> <input class="inline" name="radio" type="radio" value="top"> Top rope</label>
+        </fieldset>
+        <fieldset>
+          <p class="title">What routes did you climb today?</p>
+          <label>
+             <input class="inline" name="check" type="checkbox" value="4-5"> 4-5
+          </label>
+          <label>
+             <input class="inline" name="check" type="checkbox" value="5-6"> 5-6
+          </label>
+          <label>
+             <input class="inline" name="check" type="checkbox" value="6-7"> 6-7
+          </label>
+          <label>
+             <input class="inline" name="check" type="checkbox" value="7-8"> 7-8
+          </label>
+        </fieldset> 
+        <fieldset>
+        <label class="title" for="feedback">Share your feedback:
+          <textarea id="feedback" name="feedback" rows="3" cols="40
+          " placeholder="When I was climbing the red 6..."></textarea>
+        </label>
+        </fieldset> 
+        <input id="submit" type="submit" value="Submit"/>
+      </form>
+    </body>  
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  background-image: url(https://plus.unsplash.com/premium_photo-1672280940901-51e2e9e9e7f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=968&q=80);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-famil: sans-serif;
+  font-size: 16px;
+}
+
+h1, p{
+  margin: 1em auto;
+  text-align: center
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #0A0A23b0 ;
+
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label{ 
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0; 
+  width: 100%;
+  min-heigt: 2em;
+}
+radio, checkbox { 
+  background-color: #34e5e1;
+
+}
+input, textarea {
+  background-color: #3b3b4f;
+  border: 1px solid#3b3b4f;
+  color: white;
+ }
+
+.inline{
+width: unset;
+margin: 0 0.5 0 0;
+vertical-align: middle;
+}
+.details{
+  margin-top: 20px;
+}
+.title{
+  font-size: 18px;
+}
+input[type="submit"] {
+display: block;
+width: 60%;
+margin: 1em auto;
+height: 2em; 
+font-size: 1.1rem;
+background-color: #3b3b4f;
+border-color: white;
+min-width: 300px;
+margin-bottom: 20px;
+}
+
+** end of undefined **
+

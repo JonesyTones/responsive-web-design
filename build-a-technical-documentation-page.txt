@@ -1,0 +1,333 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+      <nav id="navbar">
+        <header>Taco Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Intro">Intro</a></li>
+          <li><a class="nav-link" href="#Shell">Shell</a></li>
+          <li><a class="nav-link" href="#Filling">Filling</a></li>
+          <li><a class="nav-link" href="#Extras">Extras</a></li>
+          <li><a class="nav-link" href="#Sauce">Sauce</a></li>
+        </ul>
+      </nav>
+    <main id="main-doc">
+      <section id="Intro" class="main-section">
+        <header id="Intro">Intro</header>
+        <article>
+        <p>Tacos are a traditional Mexican dish consisting of a tortilla filled with various ingredients such as meat, vegetables, and cheese. Tacos can be served in a variety of ways, including soft or hard shell and with a variety of toppings and sauces.</p>
+        <p>In this technical documentation, we will explore the different components of tacos, including the shell, filling, extras, and sauce.</p>
+        <p>In the code below, we create a corn tortilla shell and warm it up. We then add cooked beef as the filling, shredded cheddar cheese, fresh salsa, and shredded romaine lettuce as the extras, and habanero hot sauce as the sauce. Finally, we eat the taco by calling the eat() method on the taco object.
+          </p>
+          <code>
+            // Create the shell
+const tortilla = new Tortilla('corn');
+tortilla.warm();
+const taco = new Taco(tortilla);
+
+// Add the filling
+const beef = new Meat('beef');
+beef.cook();
+taco.addFilling(beef);
+
+// Add the extras
+const cheese = new Cheese('cheddar');
+cheese.shred();
+taco.addExtra(cheese);
+
+const salsa = new Salsa('fresh');
+salsa.chop();
+taco.addExtra(salsa);
+
+const lettuce = new Lettuce('romaine');
+lettuce.shred();
+taco.addExtra(lettuce);
+
+// Add the sauce
+const hotSauce = new HotSauce('habanero');
+hotSauce.taste();
+taco.addSauce(hotSauce);
+
+// Enjoy the taco!
+taco.eat();
+            </code>
+            <p>Below is an example of how to assemble the taco:</p>
+            <ol>
+              <li>Warm the tortilla shell by heating it in a skillet or microwave.</li>
+              <li>Place the tortilla on a plate or in a taco holder.</li>
+              <li>Add the filling of your choice to the center of the tortilla. For example, if you're using beef, spoon the cooked beef onto the center of the tortilla.</li>
+              <li>Add the extras to the top of the filling. For example, if you're using shredded cheese, sprinkle it on top of the beef.</li>
+              <li>Add the sauce to the top of the extras. For example, if you're using hot sauce, drizzle it over the cheese.</li>
+              <li>If desired, add additional toppings such as lettuce or tomatoes.</li>
+              <li>Fold the tortilla in half, enclosing the filling and toppings.</li>
+              <li>Enjoy your taco!</li>
+              </ol>
+        </article>
+      </section>
+      <section id ="Shell" class="main-section">
+        <header id="Shell">Shell</header>
+        <article>
+        <p>The shell of a taco is one of its defining characteristics. Soft shells are typically made from corn or flour tortillas, while hard shells are made from deep-fried corn tortillas. Soft shells are more pliable and can be folded around the filling, while hard shells are crispy and hold their shape well.</p>
+        <p>When preparing tacos, it is important to warm soft shells to make them more flexible and to fry hard shells just until they are crispy. Overcooking hard shells can result in them becoming too brittle and breaking easily.</p>
+        <code>
+          // Soft shell taco
+const tortilla = new Tortilla('corn');
+tortilla.warm();
+const taco = new Taco(tortilla);
+
+// Hard shell taco
+const cornTortilla = new Tortilla('corn');
+const hardShell = new HardShell(cornTortilla);
+hardShell.fry();
+const taco = new Taco(hardShell);
+          </code>
+          <p>Below are examples of taco shells:</p>
+          <ul>
+            <li>Corn tortilla</li>
+            <li>Flour tortilla</li>
+            <li>Hard shell (corn tortilla)</li>
+            <li>Soft shell (flour tortilla)</li>
+            <li>Lettuce wrap</li>
+          </ul>
+        </article>
+      </section>
+      <section id="Filling" class="main-section">
+        <header id="Filling">Filling</header>
+        <article>
+        <p>The filling is the heart of the taco and can include a wide range of ingredients. Meat is a common filling, with beef, chicken, and pork being popular options. Vegetarian fillings can include beans, tofu, or vegetables.</p>
+        <p>When preparing meat fillings, it is important to cook them thoroughly to ensure they are safe to eat. Vegetables can be roasted or sautéed to add flavor and texture to the filling. It is also important to season the filling with spices such as cumin, chili powder, and garlic for a delicious and flavorful taco.</p>
+        <code>
+          // Meat filling
+const beef = new Meat('beef');
+beef.cook();
+const taco = new Taco();
+taco.addFilling(beef);
+
+// Vegetarian filling
+const beans = new Beans('black beans');
+const veggies = new Veggies(['onions', 'bell peppers', 'zucchini']);
+beans.cook();
+veggies.roast();
+const taco = new Taco();
+taco.addFilling(beans);
+taco.addFilling(veggies);
+          </code>
+          <p>Below are examples of taco fillings:</p>
+          <ul>
+            <li>Meat (beef, chicken, pork, etc.)</li>
+            <li>Fish (tilapia, shrimp, etc.)</li>
+            <li>Beans (black beans, refried beans, etc.)</li>
+            <li>Veggies (onions, bell peppers, zucchini, etc.)</li>
+            <li>Tofu or tempeh (for vegetarian or vegan options)</li>
+          </ul>
+        </article>
+      </section>
+      <section id="Extras" class="main-section">
+        <header id="Extras">Extras</header>
+        <article>
+        <p>The extras are the toppings that are added to the taco to enhance its flavor and texture. Common extras include shredded cheese, diced tomatoes, lettuce, and onions. Salsas and guacamole are also popular extras that add a tangy or creamy element to the taco.</p>
+        <p>It is important to choose fresh, high-quality ingredients for the extras to ensure the best flavor. When preparing extras, it is important to chop them finely and season them with salt and pepper to taste.</p>
+        <code>
+          // Shredded cheese
+const cheese = new Cheese('cheddar');
+cheese.shred();
+const taco = new Taco();
+taco.addExtra(cheese);
+
+// Salsa
+const salsa = new Salsa('fresh');
+salsa.chop();
+const taco = new Taco();
+taco.addExtra(salsa);
+          </code>
+          <p>Below are examples of taco extras:</p>
+          <ul>
+            <li>Shredded cheese (cheddar, Monterey Jack, etc.)</li>
+            <li>Salsa (pico de gallo, verde, roja, etc.)</li>
+            <li>Lettuce (romaine, iceberg, etc.)</li>
+            <li>Tomatoes (diced, cherry, etc.)</li>
+            <li>Sour cream</li>
+          </ul>
+        </article>
+      </section>
+      <section id="Sauce" class="main-section">
+        <header id="Sauce">Sauce</header>
+        <article>
+        <p>The sauce is the final component of the taco and can add a spicy or tangy flavor to the dish. Salsas are a popular sauce option and can be made from fresh or roasted tomatoes, peppers, and onions. Guacamole is another popular sauce option and is made from mashed avocado, lime juice, and seasonings.</p>
+        <p>Other sauce options include hot sauce, sour cream, and crema. When preparing sauces, it is important to taste them frequently to ensure they are well balanced and not too spicy or acidic.</p>
+        <code>
+          // Hot sauce
+const hotSauce = new HotSauce('habanero');
+hotSauce.taste();
+const taco = new Taco();
+taco.addSauce(hotSauce);
+
+// Guacamole
+const avocado = new Avocado();
+const lime = new Lime();
+const seasoning = new Seasoning(['salt', 'pepper', 'cumin']);
+avocado.mash();
+lime.squeeze();
+seasoning.add();
+const guacamole = new Guacamole(avocado, lime, seasoning);
+const taco = new Taco();
+taco.addSauce(guacamole);
+          </code>
+          <p>Below are examples of taco sauces:</p>
+          <ul>
+            <li>Hot sauce (Tabasco, Sriracha, etc.)</li>
+            <li>Guacamole (avocado, lime, etc.)</li>
+            <li>Crema (sour cream, mayo, lime juice, etc.)</li>
+            <li>Ranch dressing</li>
+            <li>Cilantro-lime sauce</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+head {
+  display: none;
+}
+html, body {
+  min-width: 290px
+px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  display: block;
+  margin: 8px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section {
+  display: block;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+nav {
+  display: block;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+ol {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+code {
+  font-family: monospace;
+}
+
+** end of undefined **
+
