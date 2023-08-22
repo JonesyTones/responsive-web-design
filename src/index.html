@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="sidenav">
+          <header class="sidenav-header">Design System</header>
+  <a href="#about">GoFundMe DS</a>
+      <button href="#ds-management" class="dropdown-btn">DS Management
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#management">Management</a>
+    <a href="#measuring">Measuring the DS</a>
+  </div>
+      <button href="#foundation" class="dropdown-btn">Foundations
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#colors">Colors</a>
+    <a href="#typography">Typography</a>
+  </div>
+      <button href="#components" class="dropdown-btn">Components
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#alerts">Alerts</a>
+    <a href="#buttons">Buttons</a>
+    <a href="#cards">Cards</a>
+  </div>
+      <button href="#patterns" class="dropdown-btn">Patterns
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#form-pattern">Form Pattern</a>
+  </div>
+      <a href="#accessibility">Accessibility</a>
+</div>
+    <main id="main-doc">
+      <section id="Intro" class="main-section">
+        <h2>GoFundMe Design System</h2>
+        <header id="about">Intro</header>
+        <article>
+        <p>Tacos are a traditional Mexican dish consisting of a tortilla filled with various ingredients such as meat, vegetables, and cheese. Tacos can be served in a variety of ways, including soft or hard shell and with a variety of toppings and sauces.</p>
+        <p>In this technical documentation, we will explore the different components of tacos, including the shell, filling, extras, and sauce.</p>
+        <p>In the code below, we create a corn tortilla shell and warm it up. We then add cooked beef as the filling, shredded cheddar cheese, fresh salsa, and shredded romaine lettuce as the extras, and habanero hot sauce as the sauce. Finally, we eat the taco by calling the eat() method on the taco object.
+          </p>
+          <code>
+            // Create the shell
+const tortilla = new Tortilla('corn');
+tortilla.warm();
+const taco = new Taco(tortilla);
+
+// Add the filling
+const beef = new Meat('beef');
+beef.cook();
+taco.addFilling(beef);
+
+// Add the extras
+const cheese = new Cheese('cheddar');
+cheese.shred();
+taco.addExtra(cheese);
+
+const salsa = new Salsa('fresh');
+salsa.chop();
+taco.addExtra(salsa);
+
+const lettuce = new Lettuce('romaine');
+lettuce.shred();
+taco.addExtra(lettuce);
+
+// Add the sauce
+const hotSauce = new HotSauce('habanero');
+hotSauce.taste();
+taco.addSauce(hotSauce);
+
+// Enjoy the taco!
+taco.eat();
+            </code>
+            <p>Below is an example of how to assemble the taco:</p>
+            <ol>
+              <li>Warm the tortilla shell by heating it in a skillet or microwave.</li>
+              <li>Place the tortilla on a plate or in a taco holder.</li>
+              <li>Add the filling of your choice to the center of the tortilla. For example, if you're using beef, spoon the cooked beef onto the center of the tortilla.</li>
+              <li>Add the extras to the top of the filling. For example, if you're using shredded cheese, sprinkle it on top of the beef.</li>
+              <li>Add the sauce to the top of the extras. For example, if you're using hot sauce, drizzle it over the cheese.</li>
+              <li>If desired, add additional toppings such as lettuce or tomatoes.</li>
+              <li>Fold the tortilla in half, enclosing the filling and toppings.</li>
+              <li>Enjoy your taco!</li>
+              </ol>
+        </article>
+      </section>
+      <section id ="management" class="main-section">
+        <h2>DS Management</h2>
+        <header id="management">Management</header>
+        <article>
+        <p>The shell of a taco is one of its defining characteristics. Soft shells are typically made from corn or flour tortillas, while hard shells are made from deep-fried corn tortillas. Soft shells are more pliable and can be folded around the filling, while hard shells are crispy and hold their shape well.</p>
+        <p>When preparing tacos, it is important to warm soft shells to make them more flexible and to fry hard shells just until they are crispy. Overcooking hard shells can result in them becoming too brittle and breaking easily.</p>
+        <code>
+          // Soft shell taco
+const tortilla = new Tortilla('corn');
+tortilla.warm();
+const taco = new Taco(tortilla);
+
+// Hard shell taco
+const cornTortilla = new Tortilla('corn');
+const hardShell = new HardShell(cornTortilla);
+hardShell.fry();
+const taco = new Taco(hardShell);
+          </code>
+          <p>Below are examples of taco shells:</p>
+          <ul>
+            <li>Corn tortilla</li>
+            <li>Flour tortilla</li>
+            <li>Hard shell (corn tortilla)</li>
+            <li>Soft shell (flour tortilla)</li>
+            <li>Lettuce wrap</li>
+          </ul>
+        </article>
+        <header id="measuring">Measuring the DS</header>
+        <article>
+          <p>The shell of a taco is one of its defining characteristics. Soft shells are typically made from corn or flour tortillas, while hard shells are made from deep-fried corn tortillas. Soft shells are more pliable and can be folded around the filling, while hard shells are crispy and hold their shape well.</p>
+        <p>When preparing tacos, it is important to warm soft shells to make them more flexible and to fry hard shells just until they are crispy. Overcooking hard shells can result in them becoming too brittle and breaking easily.</p>
+        </article>
+      </section>
+      <section id="Foundations" class="main-section">
+        <h2>Foundations</h2>
+        <header id="colors">Colors</header>
+        <article>
+          <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/565bb4420d00328c8c86dcb69b63fbc1b04788f2/color%20pallete%201.svg?raw=true">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/main/color%20pallete%202.svg?raw=true">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/565bb4420d00328c8c86dcb69b63fbc1b04788f2/color%20pallete%203.svg?raw=true">
+          </div>
+        <p>The filling is the heart of the taco and can include a wide range of ingredients. Meat is a common filling, with beef, chicken, and pork being popular options. Vegetarian fillings can include beans, tofu, or vegetables.</p>
+        </article>
+        <header id="typography">Typography</header>
+        <article>
+           <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/ee1eb6da07137ebd517d4f5e4dda855efd3246ac/Typography.svg?raw=true">
+          </div>
+          <p>The extras are the toppings that are added to the taco to enhance its flavor and texture. Common extras include shredded cheese, diced tomatoes, lettuce, and onions. Salsas and guacamole are also popular extras that add a tangy or creamy element to the taco.</p>
+        </article> 
+      </section>
+      <section id="Components" class="main-section">
+        <h2>Components</h2>
+        <header id="alerts">Alerts</header>
+        <article>
+           <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/565bb4420d00328c8c86dcb69b63fbc1b04788f2/alert%20-%20Anatomy.svg?raw=true">
+          </div>
+        <p>The extras are the toppings that are added to the taco to enhance its flavor and texture. Common extras include shredded cheese, diced tomatoes, lettuce, and onions. Salsas and guacamole are also popular extras that add a tangy or creamy element to the taco.</p>
+          <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/565bb4420d00328c8c86dcb69b63fbc1b04788f2/alert%20-%20Layout%20and%20spacing.svg?raw=true">
+          </div>
+        <p>The extras are the toppings that are added to the taco to enhance its flavor and texture. Common extras include shredded cheese, diced tomatoes, lettuce, and onions. Salsas and guacamole are also popular extras that add a tangy or creamy element to the taco.</p>
+          <div class="gallery">
+        <img src="https://github.com/JonesyTones/freecodecampimages/blob/565bb4420d00328c8c86dcb69b63fbc1b04788f2/alert%20-%20Properties.svg?raw=true">
+          </div>
+        <p>The extras are the toppings that are added to the taco to enhance its flavor and texture. Common extras include shredded cheese, diced tomatoes, lettuce, and onions. Salsas and guacamole are also popular extras that add a tangy or creamy element to the taco.</p>
+         </article>
+        <header id="buttons">Buttons</header>
+        <article>
+          <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/565bb4420d00328c8c86dcb69b63fbc1b04788f2/button%20-%20Anatomy.svg?raw=true">
+          </div>
+         <p>The extras are the toppings that are added to the taco to enhance its flavor and texture. Common extras include shredded cheese, diced tomatoes, lettuce, and onions. Salsas and guacamole are also popular extras that add a tangy or creamy element to the taco.</p>
+          <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/565bb4420d00328c8c86dcb69b63fbc1b04788f2/button%20-%20Layout%20and%20spacing.svg?raw=true">
+          </div>
+         <p>The extras are the toppings that are added to the taco to enhance its flavor and texture. Common extras include shredded cheese, diced tomatoes, lettuce, and onions. Salsas and guacamole are also popular extras that add a tangy or creamy element to the taco.</p>
+          </article> 
+      </section>
+      <section id="Patterns" class="main-section">
+        <h2>Patterns</h2>
+        <header id="form-pattern">Form Pattern</header>
+        <article>
+           <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/565bb4420d00328c8c86dcb69b63fbc1b04788f2/form%20pattern%20-%20Anatomy.svg?raw=true">
+          </div>
+        <p>The sauce is the final component of the taco and can add a spicy or tangy flavor to the dish. Salsas are a popular sauce option and can be made from fresh or roasted tomatoes, peppers, and onions. Guacamole is another popular sauce option and is made from mashed avocado, lime juice, and seasonings.</p>
+          <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/a03a3cd7923aa0988d768b9078672d26713800e8/form%20pattern%20-%20Layout%20and%20spacing.svg?raw=true">
+          </div>
+        <p>Other sauce options include hot sauce, sour cream, and crema. When preparing sauces, it is important to taste them frequently to ensure they are well balanced and not too spicy or acidic.</p>
+         <div class="gallery">
+       <img src="https://github.com/JonesyTones/freecodecampimages/blob/a03a3cd7923aa0988d768b9078672d26713800e8/form%20pattern%20-%20Properties.svg?raw=true">
+          </div>
+          <p>Below are examples of taco sauces:</p>
+          <ul>
+            <li>Hot sauce (Tabasco, Sriracha, etc.)</li>
+            <li>Guacamole (avocado, lime, etc.)</li>
+            <li>Crema (sour cream, mayo, lime juice, etc.)</li>
+            <li>Ranch dressing</li>
+            <li>Cilantro-lime sauce</li>
+          </ul>
+        </article>
+      </section>
+      <section id="Accessibility" class="main-section">
+        <h2>Accessibility</h2>
+        <header id="accessibility">Designing With Inclusion In Mind</header>
+        <article>
+           <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/a03a3cd7923aa0988d768b9078672d26713800e8/tab%20stops.svg?raw=true">
+          </div>
+          <p>Other sauce options include hot sauce, sour cream, and crema. When preparing sauces, it is important to taste them frequently to ensure they are well balanced and not too spicy or acidic.</p>
+          <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/a03a3cd7923aa0988d768b9078672d26713800e8/headings.svg?raw=true">
+          </div>
+          <p>Other sauce options include hot sauce, sour cream, and crema. When preparing sauces, it is important to taste them frequently to ensure they are well balanced and not too spicy or acidic.</p>
+          <div class="gallery">
+          <img src="https://github.com/JonesyTones/freecodecampimages/blob/a03a3cd7923aa0988d768b9078672d26713800e8/aria%20labels.svg?raw=true">
+          </div>
+          <p>Other sauce options include hot sauce, sour cream, and crema. When preparing sauces, it is important to taste them frequently to ensure they are well balanced and not too spicy or acidic.</p>
+        </article> 
+      </section> 
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
